@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@font-face {
+  font-family: "abc123";
+  src: url(../adam-cg-pro/ADAM.CG\ PRO.otf);
+}
+
+
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #f0f8ff;
+  color: #112a46;
+}
+
+
+
+ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul li a:hover {
+  color: #0088a9;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+
+}
+
+ul a button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container-margin {
+  margin: auto;
+}
+
+.margin-left {
+  margin: 0 10px;
+}
+
+.hover-color:hover {
+  color: purple !important;
+}
+
+.red-color {
+  color: red;
+}
+
+/* PREVENTION.HTML*/
+
+.animation {
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  /* font-size: 4vw; */
+  font-size: 48px;
+  color: #b9c6cf;
+  -webkit-text-stroke: 0vw #383d52;
+  text-transform: uppercase;
+}
+
+.animation::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #252839;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 115%;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 303px;
+  }
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.text1{
+  color: #383d52 !important;
+}
+
+.prevent_logo {
+  padding: 1rem;
+}
+
+.card-body .card-icon {
+  padding: 1rem;
+}
+.card-icon {
+  display: block;
+  padding-top: 0.5rem;
+}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  /* padding-top: 2rem; */
+  padding-bottom: 2rem;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col1 {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+div {
+  display: block;
+}
+.card-title {
+  line-height: 1.3;
+  text-align: left;
+  font-size: 30px;
+  /* color: #383d52; */
+  color: #191970;
+  font-weight:bold;
+}
+
+.white-color {
+  color: black;
+  display: list-item;
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  /* float: left; */
+  font-size: 20px;
+}
+
+.p1 {
+  color: #191970;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.list1 {
+  color: white;
+  text-align: left;
+  width: 100%;
+  font-size: 120%;
+}
+
+.list2{
+  padding-bottom: 50px;
+}
+
+.ul1 {
+  font-size: 1.1rem;
+  color: black;
+  padding-left:50px;
+}
+
+footer{
+  padding:35px 0 25px;
+}
+
+.hr1 {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+::-webkit-scrollbar{
+  background: #ddd;
+  width: 14px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 10px #00000070;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(125deg,#3498db,#34495e);
+  border-radius: 10px;
+}
+

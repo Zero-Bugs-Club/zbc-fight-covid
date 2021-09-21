@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+@font-face {
+  font-family: "abc123";
+  src: url(../adam-cg-pro/ADAM.CG\ PRO.otf);
+}
+
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #f0f8ff;
+  color: #112a46;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul li a:hover {
+  color: #0088a9;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+
+}
+
+ul a button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container-margin {
+  margin: auto;
+}
+
+.margin-left {
+  margin: 0 10px;
+}
+
+.hover-color:hover {
+  color: purple !important;
+}
+
+.red-color {
+  color: red;
+}
+
+/* CERTIFICATE */
+.animation {
+    position: relative;
+  
+    /* font-size: 4vw; */
+    font-size: 48px;
+    font-family: 'Quicksand', sans-serif;
+    color: #b9c6cf;
+    -webkit-text-stroke: 0vw #383d52;
+    text-transform: uppercase;
+  }
+  
+  .animation::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #252839;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 115%;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0%;
+    }
+    70%,
+    90% {
+      width: 290px;
+    }
+  }
+  
+  .heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+.box-container {
+    margin: auto;
+    width: 50%;
+}
+
+.box-add {
+    /* position: absolute; 
+    margin-top: 200px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+  margin-top: 200px;
+}
+.auto-mar {
+    margin: auto;
+}
+
+.btn-mar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-clr {
+  display: flex;
+  flex-flow: column;
+  color: #112A46 !important;
+  font-size: 16px;
+  font-weight: bold;
+  width: -webkit-fill-available;
+  height: max-content;
+  text-align: center;
+  align-items: center;
+  background-color: #89CFF0;
+  margin: 0;
+  padding: 10px;
+}
+
+@media (max-width: 768px){
+  .box-add {
+    margin-top: 70px !important;
+  }
+  .box-container {
+    width: 60%;
+  }
+}
+
+#getOTP{
+  display: block;
+}
+
+#verifyOTP{
+  display: none;
+}
+
+footer{
+  padding:35px 0 25px;
+}

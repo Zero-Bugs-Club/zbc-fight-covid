@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightCovid</title>
+	
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io_2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_2/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io_2/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io_2/site.webmanifest">
+	<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/earth_image.css">
+</head>
+<body onload="getLocation()">
+	<p id="p1" >Loading</p>
+
+	<nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Fight <span class="red_color"> Covid.</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="navbar-dark visually-hidden"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav container-margin">
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="homepage.html">Home</a></li>
+					<li class="nav-item margin-left"><a class="nav-link hover-color" href="about.html">About</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="prevention.html">Prevention</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="table.html">Get Vaccinated</a></li>
+					<li class="nav-item margin-left"><a class="nav-link hover-color" href="certificate.html">Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	
+
+        <div class="data-box">
+            <div class="getwellsoon">
+                Get Well Soon, Earth!
+            </div>
+            <p class="para1">HEAL <br> CURE<br> <span class="yellow-color"> PROCURE!</span></p>
+            <p class="para2">COVID has been the present for too long... <br> let's work together to make it a thing of past.</p>
+        </div>
+        <div class="data-box2">
+            <div class="container total-cases">
+                <p style="color: rgb(72, 167, 255);opacity:1;">Total Cases</p>
+                <p class="value" style="color: white;opacity:1;">0</p>
+                <p class="new-value" style="color: white;opacity:1;">+0</p>
+            </div>
+
+            <div class="container active">
+                <p style="color: rgb(255, 68, 68);opacity:1;">Active</p>
+                <p class="value" style="color: white;opacity:1;">0</p>
+            </div>
+
+            <div class="container deaths">
+                <p style="color: white;opacity:1;">Death</p>
+                <p class="value" style="color: rgb(255, 255, 255);opacity:1;">0</p>
+                <p class="new-value" style="color: white;opacity:1;">+0</p>
+            </div>
+
+            <div class="container recovered">
+                <p style="color: rgb(39, 245, 73); opacity:1;">Recovered</p>
+                <p class="value" style="color: white;opacity:1;">0</p>
+                <p class="new-value" style="color: white;opacity:1;">+0</p>
+            </div>
+        </div>
+
+<div class="covid-wrapper">
+		<div class="viruses">
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+			<div class="virus"></div>
+		</div>
+		<div class="covid-arms"></div>
+		<div class="covid-arms right"></div>
+		<div class="earth-wrapper">
+			<div class="earth-detail"></div>
+			<div class="earth">
+				<div class="covid-eyes earth-eyes"></div>
+				<div class="covid-eyes earth-eyes left"></div>
+				<div class="mask"></div>
+				<div class="mask-wrapper"></div>
+				<div class="mask-detail"></div>
+				<div class="mask-back"></div>
+				<div class="earth-green">
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+					<div class="earth-greens"></div>
+				</div>
+			</div>
+		</div>
+		<div class="covid">
+			<div class="covid-spots">
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+				<div class="covid-spot"></div>
+			</div>
+			<div class="covid-eyes"> </div>
+			<div class="covid-eyes left"></div>
+			<div class="covid-eyebrow"></div>
+			<div class="covid-eyebrow right"></div>
+			<div class="covid-mouth"></div>
+			<div class="covid-cheek"></div>
+			<div class="covid-cheek right"></div>
+		</div>
+		<div class="covid-pulse">
+			<div class="covid-sticks">
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+				<div class="covid-stick"></div>
+			</div>
+       </div>
+    </div>
+
+    
+
+
+	<div class="covid-tracker">
+		Know your <a href="covid-project/index.html" target="blank" class="set-live"> zone safety</a> LIVE
+	</div>
+	
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+	<script src="index.js"></script>
+</body>
+<footer>
+	<center>Copyright ©2021 All rights reserved (ZBC VITC)</center>
+</footer>
+</html>

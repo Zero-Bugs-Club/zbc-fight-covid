@@ -1,22 +1,210 @@
-body{
-    margin: 50px 70px 20px;
-    font-family: 'Merriweather', serif;
-    background-color: #18133c;
-    color:white;
-    font-size: 120%;
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+
+@font-face {
+  font-family: "abc123";
+  src: url(../adam-cg-pro/ADAM.CG\ PRO.otf);
 }
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #f0f8ff;
+    color: #112a46;
+  }
+
+  ul li {
+    /* display: inline-block; */
+    padding: 0;
+    margin: 0;
+  }
+  
+.li1{
+  list-style-type: disc;
+  font-size: 18px;
+}
+
+  ul li a:hover {
+    color: #0088a9;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+  
+  }
+  
+  ul a button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  .container-margin {
+    margin: auto;
+  }
+  
+  .margin-left {
+    margin: 0 10px;
+  }
+  
+  .hover-color:hover {
+    color: purple !important;
+  }
+  
+  .red-color {
+    color: red;
+  }
+
+  .animation {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    color: #b9c6cf;
+    -webkit-text-stroke: 0vw #383d52;
+    text-transform: uppercase;
+  }
+  
+  .animation::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #252839;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 115%;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0%;
+    }
+    70%,
+    90% {
+      width: 310px;
+    }
+  }
+  
+  .heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+
+
+body {
+  text-align: left;
+  max-width: 100vw;
+  font-family: "Poppins", sans-serif;
+    background-color: #f0f8ff;
+  color: #112a46;
+
+}
+
+.red-color {
+    color: red;
+  }
+
+.menu {
+    position: relative;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 .ul-nav .li-nav{
     display: inline;
     padding: 0px 25px 25px 0px;
     font-size: 14px;
-
-    /* margin: 0%; */
 }
 .ul-nav{
     text-align: center;
 }
+
+.container-margin{
+    margin: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.animation {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    /* font-size: 4vw; */
+    font-size: 48px;
+    /* font-family: "abc123"; */
+    color:#b9c6cf;
+    -webkit-text-stroke: 0vw #383d52;
+    text-transform: uppercase;
+    
+    /* margin-top: 10px; */
+  }
+  
+.animation::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #252839;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 115%;
+    /* margin-top: 10px; */
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+  
+@keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0%;
+    }
+    70%,
+    90% {
+      width: 165px;
+    }
+}
+
+.text-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  
+  }
 
 a{
     text-decoration: none;
@@ -33,14 +221,35 @@ a{
 .data{
     margin: 10px 100px;
 }
+.image-text-container{
+  width:full; 
+  display:flex; 
+  flex-wrap:wrap;
+}
+.image-container-1{
+  width:50%; display:flex; justify-content:center;
+  align-items: center;
+}
+.text-container-1{
+  width:50%; padding:10px; display:flex; flex-direction:column; 
+}
+@media (max-width:700px){
+  .text-container-1{
+    width: 100%;
+  }
+  .image-container-1{
+    width: 100%;
+  }
+}
+
 
 .right{
     text-align: right;
 }
 
 .overview{
-    margin-left: 130px;
     width: 250px;
+    height:250px;
 }
 
 .symptoms{
@@ -71,14 +280,19 @@ h3{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 
-    color: #f0c46c;
+    color: #191970;
 }
 
 h4{
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Stardos Stencil', cursive;
-    font-weight: lighter;
+    font-size:25px;
+    font-family: 'Klee One', cursive;
+    text-transform: uppercase;
+    color: #191970;
+}
+
+footer{
+  padding:35px 0 25px;
 }
 
 p{
@@ -126,3 +340,13 @@ hr{
   background: linear-gradient(125deg,#3498db,#34495e);
   border-radius: 10px;
 }
+
+/* @media screen and (max-width:768px){
+  
+  img{
+    display: none;
+  } 
+
+} */
+
+
